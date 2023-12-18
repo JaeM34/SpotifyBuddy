@@ -1,0 +1,26 @@
+{
+  "name": "spotifyapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "server": "node index.js",
+    "client": "cd client && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.0"
+  }
+}
